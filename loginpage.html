@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fontawesome.com/icons/instagram?style=brands">
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+    <title>Instagram Gallary</title>
+
+    <style>
+        html,body
+        {
+            margin:0;
+            background:linear-gradient(rgb(241, 214, 163),whitesmoke,rgb(161, 160, 146),rgb(241, 214, 163));
+            height: 100%;
+        }
+       
+    </style>
+  <!---background:linear-gradient(#b5b0e2, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);-->
+    <script defer src="loginpage.js"></script>
+</head>
+<body>
+  <div class="countainer">
+        <!-- main block-->
+      <div class="countainer-fluid" style="height: 100%;"> 
+           <div class="row" style="height:5rem"> </div>
+           <div class="row  d-flex justify-content-center" style="height: 25rem;">
+                  <div class="col-md-3 col-12 bg-light d-flex align-items-center flex-column"
+                      style=" box-shadow: 0px 3px 7px 3px rgba(0,0,0,0.7); ">       <!--working sub-block-->
+                     <img  style="height:70px;margin-top: 1rem;"src="instagram-text-logo.png"/> 
+                       
+                     <div class="row" style="font-size:1.3rem;text-align: center;
+                                             font-family: initial;
+                                             font-style: initial;">
+                                             Login Account
+                      </div>
+                      
+                      <div style="display: flex;
+                                  justify-content: center;
+                                  flex-direction: column;"> 
+                          <form class="form" id="form" action="/homepage.html" method="GET">
+                                <!--username block start-->
+                              <div class="row " id="b1" style="display: flex;flex-direction:column; 
+                                                                 justify-content: center; " >
+                                       <input type="text" placeholder="username" name="username" id="usernameid" required
+                                              style="margin-top: 20px; 
+                                                     border-radius: 5px; 
+                                                     font-family: initial;
+                                                     border: 1px solid lightgray;" >
+                                        <div style="font-size: 10px;
+                                                    font-family: initial;color: red;
+                                                    font-weight: bold;" id="uerr"> 
+                                      </div>
+                             </div> <!--username block end-->
+                             <div class="row" id="b2" 
+                                  style="display: flex;
+                                         flex-direction: column;
+                                         justify-content: center; 
+                                         margin-top: 5px;">
+                                  <input type="password" placeholder="password" name="pass" id="passwordid" required
+                                    style="margin-top: 10px;
+                                           margin-bottom: 5px;
+                                           border-radius: 5px;
+                                           font-family: initial; 
+                                           border: 1px solid lightgray;" 
+                                           id="passwordid">
+                                    <div style="font-size: 10px;
+                                                font-family: cursive;
+                                                color: red;" id="perr">
+                                   </div>
+                              </div>   <!--password block-->
+                              <button class=" btn btn-sm btn-outline-primary" type="submit" 
+                                       style=" margin-left:60px;" >Login
+                             </button>     <!---login button-->
+                             
+                             <!----- <button class="btn btn-outline-primary btn-sm" type="submit"
+                              style="margin-top:20px; margin-left:1rem; display:flex;justify-content:center;font-family:serif;">--->
+                                      <!----style=" margin-left: 75px;margin-top:20px; margin-left:1rem;font-family: initial;">
+                             </button>  --->                                                
+                         </form>
+                       </div>
+                
+                      <div class="row mt-1">
+                           <div class="col" style="margin-top:10px;
+                                                     margin-left:1rem;
+                                                     margin-bottom: 12px;
+                                                     border:2px solid  rgb(138, 135, 135)"> 
+                          </div>
+                          <div class="col">OR</div>
+                          <div class="col" style="margin-top:10px;
+                                                    margin-bottom: 12px;
+                                                    border:2px solid rgb(138, 135, 135)"> 
+                         </div>
+                      </div> <!----- OR block-->
+                       <div class="row" style="height: 60px;font-family: initial;">
+                          <div class="row" style="height: 60px;">
+                               <div><a href="forgotpage.html">Forgot Password</a></div>
+                          </div>
+                      </div>   <!--forgot passblock-->
+                      <div class="row d-flex justify-content-center align-items-center"
+                           style="height: 20px;
+                                  font-family: initial;
+                                  text-align: center;">
+                          <div>Create New Account : <a href="signup.html">Sign Up</a></div>
+                      </div>     <!---create new account block--> 
+                  </div>
+                 <!-- <div class="row" style="height: 5rem;"></div> -->
+          </div>
+      </div>
+ </div>
+</body>
+</html>

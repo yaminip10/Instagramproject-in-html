@@ -1,0 +1,29 @@
+<div class="container-fluid ">
+  <div class="row" style="height: 70px;"></div>   
+ <div class="row d-flex justify-content-center" style="height:30rem;">
+   <div class="col-3 bg-light" style="box-shadow: 0px 3px 7px 3px black;" >
+     <div class="row d-flex justify-content-center align-items-center"
+        style="height: 100px;font-style: italic; font-weight: bold;font-size: 20px;"> 
+        Forgot Password</div>
+		<div class="row d-flex justify-content-center align-items-center"
+        style="height: 100px;font-style: italic; font-weight: bold;font-size: 20px;"> 
+        Trouble Logging In ?</div>
+       <div class="row d-flex justify-content-center flex-column mt-1" style="padding: 20px;">
+          <input type="text" placeholder="Enter old password" ><br>
+          <input type="password" placeholder="new password"><br>
+          <input type="password" placeholder="conform password">
+          <div class="row d-flex justify-content-center m-2"><button class="btn btn-success" [disabled]="!nameControl.valid" (click)="readfromvalue()">Signin</button></div>
+          <div class="row mt-1">
+          <div class="col " style="margin-top:12px; margin-bottom: 12px;border:2px solid rgb(53, 49, 49)"> </div>
+          <div class="col " style="margin-top:12px; margin-bottom: 12px;border:2px solid rgb(53, 49, 49)"> </div>
+          <div class="col">OR</div>
+          <div class="col " style="margin-top:12px; margin-bottom: 12px;border:2px solid rgb(53, 49, 49)"> </div>
+          <div class="col " style="margin-top:12px; margin-bottom: 12px;border:2px solid rgb(53, 49, 49)"> </div>
+       </div>
+       <div>
+         <div class="row d-flex justify-content-center m-2">Create New Account<a routerLink="/mypage" routerLinkActive="active">sign up</a></div>
+       </div>
+       <div class="row d-flex justify-content-center m-2">!!Back to Login page!! <a routerLink="/mypage" routerLinkActive="active">login</a></div>
+    </div>
+ </div>
+</div>
